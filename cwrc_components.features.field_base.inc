@@ -10,7 +10,7 @@
 function cwrc_components_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'body'
+  // Exported field_base: 'body'.
   $field_bases['body'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -36,7 +36,7 @@ function cwrc_components_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'comment_body'
+  // Exported field_base: 'comment_body'.
   $field_bases['comment_body'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -59,7 +59,7 @@ function cwrc_components_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'description_field'
+  // Exported field_base: 'description_field'.
   $field_bases['description_field'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -80,7 +80,40 @@ function cwrc_components_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'field_file_image_alt_text'
+  // Exported field_base: 'field_event_date'.
+  $field_bases['field_event_date'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_event_date',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'date',
+    'settings' => array(
+      'cache_count' => 4,
+      'cache_enabled' => 1,
+      'entity_translation_sync' => FALSE,
+      'granularity' => array(
+        'day' => 'day',
+        'hour' => 'hour',
+        'minute' => 'minute',
+        'month' => 'month',
+        'second' => 0,
+        'year' => 'year',
+      ),
+      'timezone_db' => 'UTC',
+      'todate' => 'optional',
+      'tz_handling' => 'date',
+    ),
+    'translatable' => 0,
+    'type' => 'datetime',
+  );
+
+  // Exported field_base: 'field_file_image_alt_text'.
   $field_bases['field_file_image_alt_text'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -102,7 +135,7 @@ function cwrc_components_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_file_image_title_text'
+  // Exported field_base: 'field_file_image_title_text'.
   $field_bases['field_file_image_title_text'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -124,7 +157,7 @@ function cwrc_components_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_image'
+  // Exported field_base: 'field_image'.
   $field_bases['field_image'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -149,7 +182,27 @@ function cwrc_components_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_logo'
+  // Exported field_base: 'field_location'.
+  $field_bases['field_location'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_location',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'addressfield',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'addressfield',
+  );
+
+  // Exported field_base: 'field_logo'.
   $field_bases['field_logo'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -177,7 +230,7 @@ function cwrc_components_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_partner_logos'
+  // Exported field_base: 'field_partner_logos'.
   $field_bases['field_partner_logos'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -205,7 +258,7 @@ function cwrc_components_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_project_status'
+  // Exported field_base: 'field_project_status'.
   $field_bases['field_project_status'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -234,7 +287,7 @@ function cwrc_components_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_tags'
+  // Exported field_base: 'field_tags'.
   $field_bases['field_tags'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -261,7 +314,7 @@ function cwrc_components_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'group_group'
+  // Exported field_base: 'group_group'.
   $field_bases['group_group'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -287,7 +340,7 @@ function cwrc_components_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'name_field'
+  // Exported field_base: 'name_field'.
   $field_bases['name_field'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -309,7 +362,7 @@ function cwrc_components_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'og_membership_request'
+  // Exported field_base: 'og_membership_request'.
   $field_bases['og_membership_request'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -332,7 +385,7 @@ function cwrc_components_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'og_roles_permissions'
+  // Exported field_base: 'og_roles_permissions'.
   $field_bases['og_roles_permissions'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -358,7 +411,7 @@ function cwrc_components_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'og_user_node'
+  // Exported field_base: 'og_user_node'.
   $field_bases['og_user_node'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -391,7 +444,40 @@ function cwrc_components_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'title_field'
+  // Exported field_base: 'og_user_node1'.
+  $field_bases['og_user_node1'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'og_user_node1',
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'handler' => 'og',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'og_behavior' => array(
+            'status' => TRUE,
+          ),
+        ),
+        'membership_type' => 'og_membership_type_default',
+        'target_bundles' => array(),
+      ),
+      'handler_submit' => 'Change handler',
+      'target_type' => 'node',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
+  );
+
+  // Exported field_base: 'title_field'.
   $field_bases['title_field'] = array(
     'active' => 1,
     'cardinality' => 1,
