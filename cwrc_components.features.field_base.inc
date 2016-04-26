@@ -164,9 +164,6 @@ function cwrc_components_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_image',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -175,7 +172,7 @@ function cwrc_components_field_default_field_bases() {
     'locked' => 0,
     'module' => 'image',
     'settings' => array(
-      'default_image' => 0,
+      'default_image' => FALSE,
       'entity_translation_sync' => array(
         0 => 'fid',
       ),
@@ -414,6 +411,48 @@ function cwrc_components_field_default_field_bases() {
           ),
         ),
         'membership_type' => 'og_membership_type_default',
+        'target_bundles' => array(),
+      ),
+      'handler_submit' => 'Change handler',
+      'target_type' => 'node',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
+  );
+
+  // Exported field_base: 'og_user_node2'
+  $field_bases['og_user_node2'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'og_user_node2',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'handler' => 'og',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'og_behavior' => array(
+            'status' => TRUE,
+          ),
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'membership_type' => 'og_membership_type_default',
+        'sort' => array(
+          'type' => 'none',
+        ),
         'target_bundles' => array(),
       ),
       'handler_submit' => 'Change handler',
