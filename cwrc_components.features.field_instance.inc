@@ -10,6 +10,42 @@
 function cwrc_components_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'og_membership-og_membership_type_default-og_membership_request'
+  $field_instances['og_membership-og_membership_type_default-og_membership_request'] = array(
+    'bundle' => 'og_membership_type_default',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Introduce yourself and express your interest in collaborating on this project.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'og_membership',
+    'fences_wrapper' => 'div_div_div',
+    'field_name' => 'og_membership_request',
+    'label' => 'Welcome Message',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 0,
+    ),
+  );
+
   // Exported field_instance: 'user-user-og_user_node2'
   $field_instances['user-user-og_user_node2'] = array(
     'bundle' => 'user',
@@ -80,7 +116,9 @@ function cwrc_components_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Introduce yourself and express your interest in collaborating on this project.');
   t('Projects I belong to');
+  t('Welcome Message');
 
   return $field_instances;
 }

@@ -164,6 +164,9 @@ function cwrc_components_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_image',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -314,6 +317,9 @@ function cwrc_components_field_default_field_bases() {
       0 => 'og_membership',
     ),
     'field_name' => 'og_membership_request',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
