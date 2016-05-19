@@ -35,6 +35,7 @@ features[field_base][] = og_roles_permissions
 features[field_base][] = og_user_node
 features[field_base][] = og_user_node2
 features[field_base][] = title_field
+features[field_instance][] = og_membership-og_membership_type_default-og_membership_request
 features[field_instance][] = user-user-og_user_node2
 features_exclude[field_instance][taxonomy_term-tags-description_field] = taxonomy_term-tags-description_field
 features_exclude[field_instance][taxonomy_term-tags-name_field] = taxonomy_term-tags-name_field
