@@ -6,6 +6,7 @@ version = 7.x-1.0
 project = cwrc_components
 dependencies[] = addressfield
 dependencies[] = ctools
+dependencies[] = cwrc_news
 dependencies[] = date
 dependencies[] = entityreference
 dependencies[] = features
